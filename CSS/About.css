@@ -1,0 +1,124 @@
+.about{
+    padding: 70px 140px;
+}
+.about_title{
+    color: aliceblue; 
+    text-align: center;
+    
+}
+.about_content{
+    color: aliceblue;
+    padding-top: 60px;
+    
+}
+.about_content-para{
+    padding-top: 30px;
+    padding-right: 400px;
+    font-size: 18px; 
+}
+.about_content-para span{
+    color: rgb(238, 175, 82);
+    text-decoration: underline;
+    cursor: default;
+}
+.about_content-skills{
+    padding: 40px 0px 0px 0px;
+}.skills {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 1rem; /* Add gap between the skill items */
+    margin-top: 20px;
+}
+
+.skill {
+    padding: 1rem 2rem;
+    font-size: 0.9rem;
+    background: linear-gradient(145deg, #333, #444); /* Gradient background */
+    border: 1px solid #555; /* Soft border */
+    border-radius: 12px;
+    font-weight: 600;
+    color: #ebe6e6;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3); /* Subtle box shadow */
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease; /* Smooth transitions */
+}
+
+.skill:hover {
+    transform: translateY(-5px); /* Lift the element slightly */
+    background: linear-gradient(145deg, #444, #555); /* Change background gradient on hover */
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5); /* Enhance the shadow on hover */
+    cursor: pointer;
+}
+.about-img{
+    height: 355px;
+    width: 300px;
+    position: absolute;
+    top: 780px;
+    right:150px;
+    
+    
+}
+
+/* About CSS Media Queries */
+@media only screen and (max-width: 1200px) {
+    .about {
+        padding: 50px 100px;
+    }
+    .about_content-para {
+        padding-right: 200px;
+    }
+    .about-img {
+        top: 700px;
+        right: 100px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .about {
+        padding: 40px 80px;
+    }
+    .about_content-para {
+        padding-right: 100px;
+    }
+    .about-img {
+        top: 650px;
+        right: 80px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .about {
+        padding: 30px 60px;
+    }
+    .about_content-para {
+        padding-right: 50px;
+    }
+    .about-img {
+        top: 600px;
+        right: 60px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .about {
+        padding: 20px 40px;
+    }
+    .about_content {
+        padding-top: 30px;
+    }
+    .about_content-para {
+        padding-right: 20px;
+    }
+    .skills {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    .about-img {
+        top: auto;
+        right: auto;
+        margin: 20px auto;
+        display: block;
+        height: 150px;
+        width: 120px;
+    }
+}
